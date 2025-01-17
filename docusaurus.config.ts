@@ -102,6 +102,7 @@ const config = (async (): Promise<Config> => {
             blogListComponent: '@theme/wasmcloud/blog/list-page',
             blogPostComponent: '@theme/wasmcloud/blog/post-page',
             onInlineAuthors: 'throw',
+            onUntruncatedBlogPosts: 'ignore',
           },
           docs: {
             editUrl: 'https://github.com/wasmCloud/wasmcloud.com/edit/main/',
@@ -161,6 +162,7 @@ const config = (async (): Promise<Config> => {
           blogListComponent: '@theme/wasmcloud/community/list-page',
           blogPostComponent: '@theme/wasmcloud/community/post-page',
           onInlineAuthors: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
         } satisfies PluginContentBlogOptions,
       ],
       [
